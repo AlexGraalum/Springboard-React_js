@@ -1,10 +1,19 @@
-function InventoryItem (/* TODO: Take the props. Set defaults to the quantity. */)
-{
+function InventoryItem({ name, type, quantity = 0, price = 0 }) {
 	return (
 		<div>
-			<h2><!-- TODO: Render the item's details. --></h2>
-			<!-- TODO: Render the low stock alert based on the quantity of the item. -->
-			<!-- TODO: Render the high value alert based on the total value of the item. -->
+			<h2>
+				{name} ({type})
+			</h2>
+			{quantity < 5 ?
+				<Message>
+					<p>Item stock is low! Remaining stock: {quantity}</p>
+				</Message>
+				: null}
+			{quantity * price > 1000 ?
+				<Message>
+					<p>Total item stock value exceeds threshold! Item stock value: {quantity * price}</p>
+				</Message>
+				: null}
 		</div>
 	);
 }
