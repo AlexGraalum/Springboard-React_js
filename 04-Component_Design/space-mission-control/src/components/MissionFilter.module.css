@@ -1,0 +1,15 @@
+#statusButton {
+    width: 120px;
+    height: 40px;
+
+    margin-right: 10px;
+
+    border: 2px solid red;
+
+    color: white;
+    background-color: transparent;
+}
+
+#statusButton:last-child {
+    margin-right: 0;
+}

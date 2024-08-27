@@ -1,0 +1,19 @@
+#actionButton {
+    width: 120px;
+    height: 40px;
+
+    margin-bottom: 10px;
+
+    border: 2px solid green;
+
+    color: white;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#actionButton:last-child {
+    margin-right: 0;
+}
