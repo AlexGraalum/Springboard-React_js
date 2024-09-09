@@ -1,0 +1,62 @@
+#header {
+  margin: 0;
+  padding: 0;
+
+  height: 15%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+#game-container {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#player {
+  margin-left: 10px;
+  color: green;
+}
+
+#fire-button {
+  height: 100px;
+  width: 100px;
+
+  border: 5px solid rgb(211, 92, 24);
+  border-radius: 50%;
+
+  background-color: rgb(235, 172, 0);
+}
+
+#restart-button {
+  height: 100px;
+  width: 100px;
+
+  border: 4px solid white;
+  border-radius: 100%;
+
+  background-color: transparent;
+  color: white;
+}
+
+#computer {
+  margin-right: 10px;
+  color: red;
+}
+
+#footer {
+  color: white;
+}
