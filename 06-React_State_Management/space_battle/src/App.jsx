@@ -31,12 +31,12 @@ function App({ minDamage = 0, maxDamage = 25 }) {
     if (gameOver === false)
       return "Engage the enemy!";
 
-    if (playerHealth === 0) {
+    if (playerHealth === 0 && cpuHealth === 0) {
+      return "It's a draw!";
+    } else if (playerHealth === 0) {
       return "Mission failed!";
     } else if (cpuHealth === 0) {
       return "Congratulations, you won!";
-    } else if (playerHealth === 0 && cpuHealth === 0) {
-      return "It's a draw!";
     }
   }
 
