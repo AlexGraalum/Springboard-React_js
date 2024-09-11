@@ -1,0 +1,47 @@
+#button-container {
+    width: 100%;
+    height: 10%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#deal-button {
+    padding: 15px;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+}
+
+#deal-button:hover {
+    background-color: #4D4D4D;
+}
+
+#deck-container {
+    width: 100%;
+    height: 90%;
+
+    margin: 0;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+#deck-container>img {
+    max-width: 200px;
+
+    margin: 10px;
+    padding: 5px;
+}
